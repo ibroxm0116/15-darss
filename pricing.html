@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -22,13 +25,13 @@
                             <a class="site-nav__link" href="./index.html">Product</a>
                         </li>
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="#">Customers</a>
+                            <a class="site-nav__link" href="./customer.html">Customers</a>
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link site-nav__link--active" href="./pricing.html">Pricing</a>
                         </li>
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="#">Resources</a>
+                            <a class="site-nav__link" href="./resources.html">Resources</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,6 +40,7 @@
                 <button class="mode-btn">
                     <img src="./images/dark.svg">
                 </button>
+                <button class="burger-btn"></button>
             </div>
         </div>
     </header>
@@ -54,7 +58,7 @@
                         <h4 class="price-table__title">Free</h4>
                         <p class="price-table__text">Brief price description</p>
                         <ins class="price-table__price">
-                            <span class="price__span">0</span> <sup>$</sup><sub>Per / month</sub>
+                            0<span class="price-table__span">Per / month</span>
                         </ins>
                         <ul class="price-table__sublist">
                             <li class="price-table__subitem">Only 2 Operators</li>
@@ -67,7 +71,7 @@
                         <h4 class="price-table__title">Standard</h4>
                         <p class="price-table__text">Brief price description</p>
                         <ins class="price-table__price">
-                            <span class="price__span">5</span> <sup>$</sup><sub>Per / month</sub>
+                            5<span class="price-table__span">Per / month</span>
                         </ins>
                         <ul class="price-table__sublist">
                             <li class="price-table__subitem">5+ Operators</li>
@@ -80,7 +84,7 @@
                         <h4 class="price-table__title">premium</h4>
                         <p class="price-table__text">Brief price description</p>
                         <ins class="price-table__price">
-                            <span class="price__span">10</span> <sup>$</sup><sub>Per / month</sub>
+                            10<span class="price-table__span">Per / month</span>
                         </ins>
                         <ul class="price-table__sublist">
                             <li class="price-table__subitem">Only 3 Operators</li>
@@ -107,7 +111,8 @@
             <div class="container">
                 <h2 class="effect__title">Product is being used with great effects alongside:</h2>
                 <div class="effect__inner">
-                    <img src="./images/device.png">
+                    <img class="effect__device-img" src="./images/device.png" alt="device">
+                    <img class="effect__people-img" src="./images/people.png" alt="people">
                     <ul class="effect__list">
                         <li class="effect__item">
                             <h3 class="effect__subtitle enterpreneur">Enterpreneur</h3>
@@ -167,7 +172,7 @@
                         <a class="join__link" href="#">Get This</a>
                     </div>
 
-                    <img src="./images/screen.png">
+                    <img class="join-img" src="./images/screen.png">
                 </div>
             </div>
         </section>
@@ -199,26 +204,53 @@
                 </div>
                 <div class="resource">
                     <ul class="resources__list">
-                        <li class="resources__item"><strong>Resources</strong></li>
-                        <li class="resources__item">About Us</li>
-                        <li class="resources__item">Blog</li>
-                        <li class="resources__item">Contact</li>
-                        <li class="resources__item">FAQ</li>
+                        <li class="resources__item">
+                            <a class="resource__link" href="#">
+                                <strong>Resources</strong>
+                            </a>
+                        </li>
+                        <li class="resources__item">
+                            <a class="resource__link" href="#">About Us</a>
+                        </li>
+                        <li class="resources__item">
+                            <a class="resource__link" href="#">Blog</a>
+                        </li>
+                        <li class="resources__item">
+                            <a class="resource__link" href="#">Contact</a>
+                        </li>
+                        <li class="resources__item">
+                            <a class="resource__link" href="#">FAQ</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="stuff">
                     <ul class="stuff__list">
-                        <li class="stuff__item"><strong>Legal Stuff</strong></li>
-                        <li class="stuff__item">Disclaimer</li>
-                        <li class="stuff__item">Financing</li>
-                        <li class="stuff__item">Privacy Policy</li>
-                        <li class="stuff__item">Terms of Service</li>
+                        <li class="stuff__item">
+                            <a class="resource__link" href="#">
+                                <strong>Legal Stuff</strong>
+                            </a>
+                        </li>
+                        <li class="stuff__item">
+                            <a class="resource__link" href="#">Disclaimer</a>
+                        </li>
+
+                        <li class="stuff__item">
+                            <a class="resource__link" href="#">Financing</a>
+                        </li>
+
+                        <li class="stuff__item">
+                            <a class="resource__link" href="#">Privacy Policy</a>
+                        </li>
+
+                        <li class="stuff__item">
+                            <a class="resource__link" href="#">Terms of Service</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="sign-now">
                     <strong class="knowing">knowing you're always on the best energy deal.</strong>
                     <form action="https://echo.htmlacademy.ru/">
-                        <input name="text" type="text">
+                        <input class="site-footer__input" name="text" type="text">
                         <button class="main-btn sign-up-now" type="submit">Sign up Now</button>
                     </form>
                 </div>
